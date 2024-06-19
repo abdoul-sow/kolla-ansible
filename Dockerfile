@@ -5,7 +5,7 @@ SHELL ["/bin/sh", "-xo", "pipefail", "-c"]
 
 ## Install system dependencies
 RUN apk add --no-cache --update \
-        ansible=6.6.0-r0 \
+        ansible=8.6.1-r0 \
         bash=5.2.15-r0 \
         debootstrap=1.0.128-r0 \
         gcc=12.2.1_git20220924-r4 \
