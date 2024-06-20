@@ -1,4 +1,4 @@
-FROM docker:23.0.6-alpine3.17
+FROM docker:24.0.7-alpine3.19
 LABEL vendor="abdoulsow/kolla-ansible" maintainer="ab.sow23@outlook.com" version="1.0.0"
 
 SHELL ["/bin/sh", "-xo", "pipefail", "-c"]
