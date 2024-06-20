@@ -1,4 +1,4 @@
-FROM docker:24.0.7-dind-alpine3.19
+FROM docker:23.0.6-alpine3.17
 LABEL vendor="abdoulsow/kolla-ansible" maintainer="ab.sow23@outlook.com" version="1.0.0"
 
 SHELL ["/bin/sh", "-xo", "pipefail", "-c"]
@@ -24,11 +24,11 @@ RUN apk add --no-cache --update \
         py3-pip=23.3.1-r0
 
 RUN pip3 install --no-cache-dir -U \
-        pip==23.2.1 \
-        diskimage-builder==3.31.0 \
-        kolla==16.1.0 \
-        kolla-ansible==16.1.0 \
-        python-openstackclient==6.3.0 && \
+        pip==24.0 \
+        diskimage-builder==3.33.0 \
+        kolla==18.0.0 \
+        kolla-ansible==18.0.0 \
+        python-openstackclient==6.6.0 && \
     mkdir -p /etc/kolla
 
 COPY etc/ansible/ansible.cfg /etc/ansible/ansible.cfg
